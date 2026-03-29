@@ -1,8 +1,10 @@
+// Small app to test an endpoint. More specifically, to test it with docker
+// Name to run with for RUN_BY environment variable: "assignment3docker"
+
 using System.Net;
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
-
 
 // Verify endpoint to return builder and runner information along with timestamp and machine name
 app.MapGet("/verify", () =>
