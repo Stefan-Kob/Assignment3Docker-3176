@@ -3,6 +3,7 @@ using System.Net;
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
+
 // Verify endpoint to return builder and runner information along with timestamp and machine name
 app.MapGet("/verify", () =>
 {
